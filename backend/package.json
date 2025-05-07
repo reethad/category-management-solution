@@ -1,0 +1,30 @@
+{
+  "name": "fashion-categories-api",
+  "version": "1.0.0",
+  "description": "API for managing e-commerce fashion categories in a tree structure",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "seed": "node src/seed.js",
+    "test": "jest --forceExit",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": ["/node_modules/"],
+    "collectCoverageFrom": ["src/**/*.js"]
+  }
+}
